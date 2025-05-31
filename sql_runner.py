@@ -1,5 +1,17 @@
 import psycopg2
 import re
+from dotenv import load_dotenv
+import os
+
+
+load_dotenv()
+
+HOST_DB = os.getenv("HOST_DB")
+PASSWORD_DB = os.getenv("PASSWORD_DB")
+USER_DB = os.getenv("USER_DB")
+DB_NAME = os.getenv("DB_NAME")
+
+
 
 def check_sql_columns(sql, all_columns):
     # all_columns: dict of {table: [col1, col2, ...]}
@@ -16,10 +28,10 @@ def check_sql_columns(sql, all_columns):
 def run_sql_query(sql, db_params=None):
     if db_params is None:
         db_params = {
-            "dbname": "postgres",
-            "user": "postgres",
-            "password": "dancecovery",
-            "host": "database-2.c9ggk84co759.eu-central-1.rds.amazonaws.com",
+            "dbname": DB_NAME,
+            "user": USER_DB,
+            "password": PASSWORD_DB,
+            "host": HOST_DB,
             "port": "5432"
         }
     conn = psycopg2.connect(**db_params)

@@ -1,4 +1,14 @@
 import psycopg2
+from dotenv import load_dotenv
+import os
+
+
+load_dotenv()
+
+HOST_DB = os.getenv("HOST_DB")
+PASSWORD_DB = os.getenv("PASSWORD_DB")
+USER_DB = os.getenv("USER_DB")
+DB_NAME = os.getenv("DB_NAME")
 
 def fetch_tables_and_columns(conn):
     cursor = conn.cursor()
@@ -65,10 +75,10 @@ def fetch_foreign_keys(conn):
 def fetch_schema_from_db(db_params=None):
     if db_params is None:
         db_params = {
-            "dbname": "postgres",
-            "user": "postgres",
-            "password": "dancecovery",
-            "host": "database-2.c9ggk84co759.eu-central-1.rds.amazonaws.com",
+            "dbname": DB_NAME,
+            "user": USER_DB,
+            "password": PASSWORD_DB,
+            "host": HOST_DB,
             "port": "5432"
         }
     print("Connecting to database with params:", db_params)
