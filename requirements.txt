@@ -6,4 +6,4 @@ pandas
 matplotlib
 fastapi
 slack-sdk
-psycopg2
+psycopg2-binary
