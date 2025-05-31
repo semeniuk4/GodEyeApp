@@ -1,0 +1,75 @@
+{
+"SELECT \n    TABLE_SCHEMA, \n    TABLE_NAME \nFROM \n    INFORMATION_SCHEMA.TABLES \nWHERE \n    TABLE_TYPE = 'BASE TABLE'": [
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "spt_fallback_db"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "spt_fallback_dev"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "spt_fallback_usg"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Employees"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Categories"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Customers"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Shippers"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Suppliers"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Orders"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Products"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Order Details"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "CustomerCustomerDemo"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "CustomerDemographics"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Region"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Territories"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "EmployeeTerritories"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "spt_monitor"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "MSreplication_options"
+	}
+]}

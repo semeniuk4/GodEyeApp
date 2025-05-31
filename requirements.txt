@@ -1,0 +1,22 @@
+AI that takes care of customer support via email, whatsapp, telegram and Instagram. 
+
+ I want to create an AI agent myself. I want to use LLM APi like chatgpt or hugging face.
+  The ai agent shoudl be able to connect to other systems . 
+  it should grab infromation from our database of flutter app adn also being able to communicate via email, telegram , whatsapp or instagram direct with our clients.
+   tell me the architecture of it and architecture of that project.
+
+
+
+
+Stack 
+Agent logic - python connecting to LLM API
+AI agent Middleware
+
+
+/ai-agent-telegram/
+├── main.py               # FastAPI appF
+├── telegram_bot.py       # Webhook handler + reply logic
+├── openai_agent.py       # Sends prompts to OpenAI
+├── db_client.py          # (Optional) Fetch data from DB
+├── requirements.txt
+└── .env                  # API keys and secrets

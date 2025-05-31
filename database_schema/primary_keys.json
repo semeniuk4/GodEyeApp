@@ -1,0 +1,83 @@
+{
+"SELECT \n    TC.TABLE_SCHEMA, \n    TC.TABLE_NAME, \n    KU.COLUMN_NAME\nFROM \n    INFORMATION_SCHEMA.TABLE_CONSTRAINTS AS TC\nJOIN \n    INFORMATION_SCHEMA.KEY_COLUMN_USAGE AS KU\n    ON TC.CONSTRAINT_NAME = KU.CONSTRAINT_NAME\nWHERE \n    TC.CONSTRAINT_TYPE = 'PRIMARY KEY'": [
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Categories",
+		"COLUMN_NAME" : "CategoryID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "CustomerCustomerDemo",
+		"COLUMN_NAME" : "CustomerID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "CustomerCustomerDemo",
+		"COLUMN_NAME" : "CustomerTypeID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "CustomerDemographics",
+		"COLUMN_NAME" : "CustomerTypeID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Customers",
+		"COLUMN_NAME" : "CustomerID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Employees",
+		"COLUMN_NAME" : "EmployeeID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "EmployeeTerritories",
+		"COLUMN_NAME" : "EmployeeID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "EmployeeTerritories",
+		"COLUMN_NAME" : "TerritoryID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Order Details",
+		"COLUMN_NAME" : "OrderID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Order Details",
+		"COLUMN_NAME" : "ProductID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Orders",
+		"COLUMN_NAME" : "OrderID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Products",
+		"COLUMN_NAME" : "ProductID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Region",
+		"COLUMN_NAME" : "RegionID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Shippers",
+		"COLUMN_NAME" : "ShipperID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Suppliers",
+		"COLUMN_NAME" : "SupplierID"
+	},
+	{
+		"TABLE_SCHEMA" : "dbo",
+		"TABLE_NAME" : "Territories",
+		"COLUMN_NAME" : "TerritoryID"
+	}
+]}
